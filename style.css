@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(50, 50, 206);
+    color: yellow
+  }
+
+#nomesite{
+    color: rgb(17, 209, 243);
+}
+
+#cabecalho{
+    background-color:rgb(16, 8, 36);
+}
+
+#sobre{
+    background-color: rgb(17, 209, 243);
+    color:rgb(50, 50, 206);
+
+}
+
+#enviar{
+    border-radius:100px;
+    color:white;
+    background-color:black;
+}
+#enviaruf{
+    border-radius:100px;
+    color:white;
+    background-color:black;
+}
+#enviarferiado{
+    border-radius:100px;
+    color:white;
+    background-color:black;
+}
+
+#ddd{
+    border-radius:10px;
+}
+
+#uf{
+    border-radius:10px;
+}
+
+#feriado{
+    border-radius:10px;
+}
