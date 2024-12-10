@@ -15,7 +15,7 @@
    <div id="sobre"> <h1>Este site tem como objetivo devolver informações importantes ao seu usuário, nesse caso vamos retornar:</h1> <br>
     <h2>Nome das cidades e dos estados que usam o DDD informado. <br> <br>
      Nome dos municípios e seus códigos IBGE da Unidade Federal (UF) fornecida. <br> <br>
-    Todos os feriados em determinado ano, sendo o ano fornecido maior que 1899.</h2> </div>
+    Retorna todos os feriados em determinado ano no formato Ano-Mes-Dia, sendo o ano fornecido maior que 1899.</h2> </div>
     </div>
 
     <label for="ddd"><b>DDD</b></label>
@@ -29,9 +29,10 @@
     <div id="mostrauf"></div> <br> <br>
 
     <label for="feriado"><b>Ano</b></label>
-    <input type="text" id="feriado"> <i>Digite um ano para retornar todos seus feriados (Ex: 2024)</i><br>
+    <input type="number" id="feriado"> <i>Digite um ano para retornar todos seus feriados (Ex: 2024)</i><br>
     <input type="button" value="Enviar" id="enviarferiado"><br>
     <div id="mostraferiado"></div> 
+     <!--fecha o site aqui-->
   <script>
     
     async function consulta(){
@@ -115,7 +116,7 @@ function mostraDadosFeriado(js){
         let texto= "<h1>Dados solicitados</h1>";
         js.forEach(feriado => {
         texto+= "Feriado: "+ feriado.name+"<br>";  
-        texto+= "Data em que vai ocorrer: "+ feriado.date+"<br>";  
+        texto+= "Data do feriado: "+ feriado.date+"<br>";  
         texto+= "Tipo: "+ feriado.type +"<br> <br>";   
         }); 
         painel.innerHTML = texto;       //painel = texto   
